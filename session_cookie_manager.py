@@ -56,7 +56,7 @@ def session_cookie_decoder(session_cookie_value):
     """
     try:
         compressed = False
-        payload = session_cookie_values
+        payload = session_cookie_value
 
         if payload.startswith(b'.'):
             compressed = True
