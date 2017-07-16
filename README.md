@@ -4,6 +4,12 @@ Author : [**Wilson Sumanang**](https://github.com/saruberoz)
 
 Imported from [saruberoz.github.io](http://saruberoz.github.io/flask-session-cookie-decoder-slash-encoder)
 
+## Depencencies
+
++ [itsdangerous](https://pypi.python.org/pypi/itsdangerous)
+
+## How to
+
 What you will need the:
 + flask app secret key (for encoding)
 + the session cookie structure/data for (decoding/encoding)
