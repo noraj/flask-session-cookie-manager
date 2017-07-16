@@ -39,7 +39,7 @@ def session_cookie_encoder(secret_key, session_cookie_structure):
     try:
         app = MockApp(secret_key)
 
-        session_cookie_structure = dict()
+        session_cookie_structure = dict(ast.literal_eval(session_cookie_structure))
         si = SecureCookieSessionInterface()
         s = si.get_signing_serializer(app)
 
