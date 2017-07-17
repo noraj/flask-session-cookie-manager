@@ -7,6 +7,7 @@ Imported from [saruberoz.github.io](http://saruberoz.github.io/flask-session-coo
 ## Depencencies
 
 + [itsdangerous](https://pypi.python.org/pypi/itsdangerous)
++ [Flask](https://pypi.python.org/pypi/Flask)
 
 ## How to
 
