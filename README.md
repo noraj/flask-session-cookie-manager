@@ -1,6 +1,8 @@
 # Flask Session Cookie Decoder/Encoder
 
-Author : [**Wilson Sumanang**](https://github.com/saruberoz)
+Original author : [**Wilson Sumanang**](https://github.com/saruberoz)
+
+Fixes and improvements author : [**Alexandre ZANNI**](https://github.com/noraj1337)
 
 Imported from [saruberoz.github.io](http://saruberoz.github.io/flask-session-cookie-decoder-slash-encoder)
 
