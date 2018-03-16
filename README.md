@@ -2,7 +2,7 @@
 
 Original author : [**Wilson Sumanang**](https://github.com/saruberoz)
 
-Fixes and improvements author : [**Alexandre ZANNI**](https://github.com/noraj1337)
+Fixes and improvements author : [**Alexandre ZANNI**](https://github.com/noraj)
 
 Imported from [saruberoz.github.io](http://saruberoz.github.io/flask-session-cookie-decoder-slash-encoder)
 
