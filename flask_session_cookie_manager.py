@@ -7,7 +7,7 @@ import zlib
 from itsdangerous import base64_decode
 import ast
 
-# for OOP
+# Abstract Base Classes (PEP 3119)
 from abc import ABC, abstractmethod
 
 # Lib for argument parsing
@@ -45,7 +45,7 @@ class FSCM(ABC):
                 compressed = False
                 payload = session_cookie_value
 
-                if payload.startswith("."):
+                if payload.startswith('.'):
                     compressed = True
                     payload = payload[1:]
 

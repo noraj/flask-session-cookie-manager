@@ -24,7 +24,7 @@ setup(
     author='Wilson Sumanang, Alexandre ZANNI',
     maintainer='Alexandre ZANNI, TAbdiukov',
     license='Unknown License',
-    url='https://github.com/TAbdiukov/flask-session-cookie-manager', #change this line tp your repo if PR accepted
+    url='https://github.com/noraj/flask-session-cookie-manager',
     include_package_data=True,
     classifiers=[
         'Operating System :: OS Independent',
