@@ -6,6 +6,7 @@ import sys
 
 from os.path import join, dirname
 from setuptools import setup
+import codecs
 
 
 read = lambda filepath: codecs.open(filepath, 'r', 'utf-8').read()
@@ -15,15 +16,15 @@ if 'publish' in sys.argv:
     sys.exit()
 
 setup(
-    name='Flask Session Cookie Decoder/Encoder',
+    name='flask-session-cookie-manager',
     version="1.2",
-    description="simple Python script to deal with Flask session cookie"
+    description="simple Python script to deal with Flask session cookie",
     long_description=read(join(dirname(__file__), 'README.md')),
     keywords='Flask session cookie',
     author='Wilson Sumanang, Alexandre ZANNI',
-    maintainer='Alexandre ZANNI, Tabdiukov',
+    maintainer='Alexandre ZANNI, TAbdiukov',
     license='Unknown License',
-    url='https://github.com/noraj/flask-session-cookie-manager',
+    url='https://github.com/TAbdiukov/flask-session-cookie-manager', #change this line tp your repo if PR accepted
     include_package_data=True,
     classifiers=[
         'Operating System :: OS Independent',
@@ -31,4 +32,6 @@ setup(
         'Programming Language :: Python :: 3',
         'Topic :: Software Development :: Libraries :: Security',
     ],
+	
+	py_modules=['flask_session_cookie_manager'],
 )

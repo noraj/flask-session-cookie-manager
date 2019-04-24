@@ -106,3 +106,6 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# pip works
+flask-session-cookie-manager.zip

@@ -18,12 +18,12 @@ from flask.sessions import SecureCookieSessionInterface
 
 class MockApp(object):
 
-    def __init__(self, secret_key):
-        self.secret_key = secret_key
+	def __init__(self, secret_key):
+		self.secret_key = secret_key
 
 
-class CookieMan(ABC):
-	def session_cookie_encoder(secret_key, session_cookie_structure):
+class FSCM(ABC):
+	def encode(secret_key, session_cookie_structure):
 		""" Encode a Flask session cookie """
 		try:
 			app = MockApp(secret_key)
@@ -34,17 +34,18 @@ class CookieMan(ABC):
 
 			return s.dumps(session_cookie_structure)
 		except Exception as e:
-			return "[Encoding error]{}".format(e)
+			return "[Encoding error] {}".format(e)
+			raise e
 
 
-	def session_cookie_decoder(session_cookie_value, secret_key=None):
+	def decode(session_cookie_value, secret_key=None):
 		""" Decode a Flask cookie  """
 		try:
 			if(secret_key==None):
 				compressed = False
 				payload = session_cookie_value
 
-				if payload.startswith(b'.'):
+				if payload.startswith("."):
 					compressed = True
 					payload = payload[1:]
 
@@ -63,7 +64,8 @@ class CookieMan(ABC):
 
 				return s.loads(session_cookie_value)
 		except Exception as e:
-			return "[Decoding error]{}".format(e)
+			return "[Decoding error] {}".format(e)
+			raise e
 
 
 if __name__ == "__main__":
@@ -94,13 +96,13 @@ if __name__ == "__main__":
 	## get args
 	args = parser.parse_args()
 
-    ## find the option chosen
-    if(args.subcommand == 'encode'):
-        if(args.secret_key is not None and args.cookie_structure is not None):
-            print(session_cookie_encoder(args.secret_key, args.cookie_structure))
-    elif(args.subcommand == 'decode'):
-        if(args.secret_key is not None and args.cookie_value is not None):
-            print(session_cookie_decoder(args.cookie_value,args.secret_key))
-        elif(args.cookie_value is not None):
-            print(session_cookie_decoder(args.cookie_value))
+	## find the option chosen
+	if(args.subcommand == 'encode'):
+		if(args.secret_key is not None and args.cookie_structure is not None):
+			print(FSCM.encode(args.secret_key, args.cookie_structure))
+	elif(args.subcommand == 'decode'):
+		if(args.secret_key is not None and args.cookie_value is not None):
+			print(FSCM.decode(args.cookie_value,args.secret_key))
+		elif(args.cookie_value is not None):
+			print(FSCM.decode(args.cookie_value))
 
