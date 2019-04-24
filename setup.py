@@ -32,6 +32,6 @@ setup(
         'Programming Language :: Python :: 3',
         'Topic :: Software Development :: Libraries :: Security',
     ],
-	
-	py_modules=['flask_session_cookie_manager'],
+
+    py_modules=['flask_session_cookie_manager'],
 )
