@@ -8,7 +8,12 @@ from itsdangerous import base64_decode
 import ast
 
 # Abstract Base Classes (PEP 3119)
-from abc import ABC, abstractmethod
+if sys.version_info[0] <= 2 and sys.version_info[1] < 6: # < 2.6
+    raise Exception('Must be using at least Python 2.6')
+elif (sys.version_info[0] == 2 and sys.version_info[1] >= 6): # >= 2.6 && < 3.0
+    from abc import ABCMeta, abstractmethod
+else: # > 3.0
+    raise Exception('Use Python 3 version of the script')
 
 # Lib for argument parsing
 import argparse
@@ -22,8 +27,11 @@ class MockApp(object):
         self.secret_key = secret_key
 
 
-class FSCM(ABC):
-    def encode(secret_key, session_cookie_structure):
+class FSCM:
+    __metaclass__ = ABCMeta
+
+    @classmethod
+    def encode(cls, secret_key, session_cookie_structure):
         """ Encode a Flask session cookie """
         try:
             app = MockApp(secret_key)
@@ -37,8 +45,8 @@ class FSCM(ABC):
             return "[Encoding error] {}".format(e)
             raise e
 
-
-    def decode(session_cookie_value, secret_key=None):
+    @classmethod
+    def decode(cls, session_cookie_value, secret_key=None):
         """ Decode a Flask cookie  """
         try:
             if(secret_key==None):

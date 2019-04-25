@@ -8,13 +8,38 @@ Imported from [saruberoz.github.io](http://saruberoz.github.io/flask-session-coo
 
 ## Depencencies
 
++ Python 2 or Python 3
 + [itsdangerous](https://pypi.python.org/pypi/itsdangerous)
 + [Flask](https://pypi.python.org/pypi/Flask)
 
-## Usage
+## Installation
+
+### ArchLinux
+
+#### Python 3
 
 ```
-usage: session_cookie_manager.py [-h] {encode,decode} ...
+# pacman -S python
+# pacman -S python-itsdangerous python-flask --asdep
+```
+
+#### Python 2
+
+```
+# pacman -S python2
+# pacman -S python2-itsdangerous python2-flask --asdep
+```
+
+### Other distros
+
+Find your way with your package manager, use pip in a virtual environment or use [pyenv](https://github.com/pyenv/pyenv).
+
+## Usage
+
+Use `flask_session_cookie_manager3.py` with Python 3 and `flask_session_cookie_manager2.py` with Python 2.
+
+```
+usage: flask_session_cookie_manager{2,3}.py [-h] {encode,decode} ...
 
 Flask Session Cookie Decoder/Encoder
 
@@ -30,7 +55,7 @@ optional arguments:
 ### Encode
 
 ```
-usage: session_cookie_manager.py encode [-h] -s <string> -t <string>
+usage: flask_session_cookie_manager{2,3}.py encode [-h] -s <string> -t <string>
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -43,7 +68,7 @@ optional arguments:
 ### Decode
 
 ```
-usage: session_cookie_manager.py decode [-h] [-s <string>] -c <string>
+usage: flask_session_cookie_manager.py decode [-h] [-s <string>] -c <string>
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -58,7 +83,7 @@ optional arguments:
 ### Encode
 
 ```
-$ python2 session_cookie_manager.py encode -s '.{y]tR&sp&77RdO~u3@XAh#TalD@Oh~yOF_51H(QV};K|ghT^d' -t '{"number":"326410031505","username":"admin"}'
+$ python{2,3} flask_session_cookie_manager{2,3}.py encode -s '.{y]tR&sp&77RdO~u3@XAh#TalD@Oh~yOF_51H(QV};K|ghT^d' -t '{"number":"326410031505","username":"admin"}'
 eyJudW1iZXIiOnsiIGIiOiJNekkyTkRFd01ETXhOVEExIn0sInVzZXJuYW1lIjp7IiBiIjoiWVdSdGFXND0ifX0.DE2iRA.ig5KSlnmsDH4uhDpmsFRPupB5Vw
 ```
 
@@ -69,7 +94,7 @@ eyJudW1iZXIiOnsiIGIiOiJNekkyTkRFd01ETXhOVEExIn0sInVzZXJuYW1lIjp7IiBiIjoiWVdSdGFX
 With secret key:
 
 ```
-$ python2 session_cookie_manager.py decode -c 'eyJudW1iZXIiOnsiIGIiOiJNekkyTkRFd01ETXhOVEExIn0sInVzZXJuYW1lIjp7IiBiIjoiWVdSdGFXND0ifX0.DE2iRA.ig5KSlnmsDH4uhDpmsFRPupB5Vw' -s '.{y]tR&sp&77RdO~u3@XAh#TalD@Oh~yOF_51H(QV};K|ghT^d'
+$ python{2,3} flask_session_cookie_manager{2,3}.py decode -c 'eyJudW1iZXIiOnsiIGIiOiJNekkyTkRFd01ETXhOVEExIn0sInVzZXJuYW1lIjp7IiBiIjoiWVdSdGFXND0ifX0.DE2iRA.ig5KSlnmsDH4uhDpmsFRPupB5Vw' -s '.{y]tR&sp&77RdO~u3@XAh#TalD@Oh~yOF_51H(QV};K|ghT^d'
 {u'username': 'admin', u'number': '326410031505'}
 ```
 
@@ -77,6 +102,6 @@ $ python2 session_cookie_manager.py decode -c 'eyJudW1iZXIiOnsiIGIiOiJNekkyTkRFd
 Without secret key (less pretty output):
 
 ```
-$ python2 session_cookie_manager.py decode -c 'eyJudW1iZXIiOnsiIGIiOiJNekkyTkRFd01ETXhOVEExIn0sInVzZXJuYW1lIjp7IiBiIjoiWVdSdGFXND0ifX0.DE2iRA.ig5KSlnmsDH4uhDpmsFRPupB5Vw'
+$ python{2,3} flask_session_cookie_manager{2,3}.py decode -c 'eyJudW1iZXIiOnsiIGIiOiJNekkyTkRFd01ETXhOVEExIn0sInVzZXJuYW1lIjp7IiBiIjoiWVdSdGFXND0ifX0.DE2iRA.ig5KSlnmsDH4uhDpmsFRPupB5Vw'
 {"number":{" b":"MzI2NDEwMDMxNTA1"},"username":{" b":"YWRtaW4="}}
 ```

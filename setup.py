@@ -17,7 +17,7 @@ if 'publish' in sys.argv:
 
 setup(
     name='flask-session-cookie-manager',
-    version="1.2",
+    version='1.2.1',
     description="simple Python script to deal with Flask session cookie",
     long_description=read(join(dirname(__file__), 'README.md')),
     keywords='Flask session cookie',
@@ -29,9 +29,8 @@ setup(
     classifiers=[
         'Operating System :: OS Independent',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 3',
         'Topic :: Software Development :: Libraries :: Security',
     ],
 
-    py_modules=['flask_session_cookie_manager'],
+    py_modules=['flask_session_cookie_manager2', 'flask_session_cookie_manager3'],
 )
