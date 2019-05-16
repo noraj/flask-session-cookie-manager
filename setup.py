@@ -29,7 +29,13 @@ setup(
     classifiers=[
         'Operating System :: OS Independent',
         'Programming Language :: Python',
-        'Topic :: Software Development :: Libraries :: Security',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 3',
+        'License :: Other/Proprietary License',
+        'Topic :: Security',
+        'Topic :: Utilities',
+        'Environment :: Console',
+        'Intended Audience :: Other Audience',
     ],
 
     py_modules=['flask_session_cookie_manager2', 'flask_session_cookie_manager3'],
