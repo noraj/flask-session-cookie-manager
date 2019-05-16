@@ -19,7 +19,7 @@ setup(
     name='flask-session-cookie-manager',
     version='1.2.1',
     description="simple Python script to deal with Flask session cookie",
-    long_description=read(join(dirname(__file__), 'README.md')),
+    #long_description=read(join(dirname(__file__), 'README.md')),
     keywords='Flask session cookie',
     author='Wilson Sumanang, Alexandre ZANNI',
     maintainer='Alexandre ZANNI, TAbdiukov',
