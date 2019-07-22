@@ -1,5 +1,10 @@
 # Flask Session Cookie Decoder/Encoder
 
+[![Build Status](https://img.shields.io/github/forks/noraj/flask-session-cookie-manager.svg?style=flat-square)](https://github.com/noraj/flask-session-cookie-manager)
+[![Build Status](https://img.shields.io/github/stars/noraj/flask-session-cookie-manager.svg?style=flat-square)](https://github.com/noraj/flask-session-cookie-manager)
+[![Rawsec's CyberSecurity Inventory](https://inventory.rawsec.ml/img/badges/Rawsec-inventoried-FF5050_flat-square.svg)](https://inventory.rawsec.ml/tools.html#Flask%20Session%20Cookie%20Decoder/Encoder)
+![GitHub top language](https://img.shields.io/github/languages/top/noraj/flask-session-cookie-manager.svg?style=flat-square)
+
 Original author : [**Wilson Sumanang**](https://github.com/saruberoz)
 
 Fixes and improvements author : [**Alexandre ZANNI**](https://github.com/noraj)
