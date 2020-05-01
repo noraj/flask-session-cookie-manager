@@ -19,25 +19,46 @@ Imported from [saruberoz.github.io](http://saruberoz.github.io/flask-session-coo
 
 ## Installation
 
-### ArchLinux
+### Package
 
-#### Python 3
+#### ArchLinux
 
 ```
+# makepkg -sic
+```
+
+### Git
+
+#### ArchLinux
+
+##### Python 3
+
+```
+$ git clone https://github.com/noraj/flask-session-cookie-manager.git
 # pacman -S python
 # pacman -S python-itsdangerous python-flask --asdep
 ```
 
-#### Python 2
+##### Python 2
 
 ```
+$ git clone https://github.com/noraj/flask-session-cookie-manager.git
 # pacman -S python2
 # pacman -S python2-itsdangerous python2-flask --asdep
 ```
 
-### Other distros
+#### Other distros
 
 Find your way with your package manager, use pip in a virtual environment or use [pyenv](https://github.com/pyenv/pyenv).
+
+Eg.
+
+```
+$ git clone https://github.com/noraj/flask-session-cookie-manager.git && cd flask-session-cookie-manager
+$ python -m venv venv
+$ source venv/bin/activate
+$ python setup.py install
+```
 
 ## Usage
 
@@ -102,7 +123,6 @@ With secret key:
 $ python{2,3} flask_session_cookie_manager{2,3}.py decode -c 'eyJudW1iZXIiOnsiIGIiOiJNekkyTkRFd01ETXhOVEExIn0sInVzZXJuYW1lIjp7IiBiIjoiWVdSdGFXND0ifX0.DE2iRA.ig5KSlnmsDH4uhDpmsFRPupB5Vw' -s '.{y]tR&sp&77RdO~u3@XAh#TalD@Oh~yOF_51H(QV};K|ghT^d'
 {u'username': 'admin', u'number': '326410031505'}
 ```
-
 
 Without secret key (less pretty output):
 

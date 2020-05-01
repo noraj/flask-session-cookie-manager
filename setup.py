@@ -27,7 +27,7 @@ setup(
     keywords='Flask session cookie',
     author='Wilson Sumanang, Alexandre ZANNI',
     maintainer='Alexandre ZANNI, TAbdiukov',
-    license='Unknown License',
+    license='MIT',
     url='https://github.com/noraj/flask-session-cookie-manager',
     include_package_data=True,
     classifiers=[
@@ -41,6 +41,7 @@ setup(
         'Environment :: Console',
         'Intended Audience :: Other Audience',
     ],
-
-    py_modules=['flask_session_cookie_manager2', 'flask_session_cookie_manager3'],
+    install_requires=['itsdangerous', 'Flask'],
+    # https://python-packaging.readthedocs.io/en/latest/command-line-scripts.html
+    scripts=['flask_session_cookie_manager2.py', 'flask_session_cookie_manager3.py'],
 )
