@@ -1,6 +1,6 @@
 pkgname=('flask-session-cookie-manager3' 'flask-session-cookie-manager2')
 _pkgname=flask-session-cookie-manager
-pkgver=v1.2.1.1.r0.g3433273
+pkgver=v1.2.1.1.r1.gbf1f9b9
 pkgrel=1
 pkgdesc='Decode and encode Flask session cookie'
 arch=('any')

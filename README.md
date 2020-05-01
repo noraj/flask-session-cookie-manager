@@ -21,30 +21,21 @@ Imported from [saruberoz.github.io](http://saruberoz.github.io/flask-session-coo
 
 ### Package
 
-#### ArchLinux
+#### BlackArch Linux
 
 ```
-# makepkg -sic
+# pacman -S flask-session-cookie-manager{3,2}
 ```
 
 ### Git
 
 #### ArchLinux
 
-##### Python 3
+Both python3 etn python2:
 
 ```
-$ git clone https://github.com/noraj/flask-session-cookie-manager.git
-# pacman -S python
-# pacman -S python-itsdangerous python-flask --asdep
-```
-
-##### Python 2
-
-```
-$ git clone https://github.com/noraj/flask-session-cookie-manager.git
-# pacman -S python2
-# pacman -S python2-itsdangerous python2-flask --asdep
+$ git clone https://github.com/noraj/flask-session-cookie-manager.git && cd flask-session-cookie-manager
+# makepkg -sic
 ```
 
 #### Other distros
