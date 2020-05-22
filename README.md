@@ -4,6 +4,7 @@
 [![Build Status](https://img.shields.io/github/stars/noraj/flask-session-cookie-manager.svg?style=flat-square)](https://github.com/noraj/flask-session-cookie-manager)
 [![Rawsec's CyberSecurity Inventory](https://inventory.rawsec.ml/img/badges/Rawsec-inventoried-FF5050_flat-square.svg)](https://inventory.rawsec.ml/tools.html#Flask%20Session%20Cookie%20Decoder/Encoder)
 ![GitHub top language](https://img.shields.io/github/languages/top/noraj/flask-session-cookie-manager.svg?style=flat-square)
+[![GitHub license](https://img.shields.io/github/license/noraj/flask-session-cookie-manager)](https://github.com/noraj/flask-session-cookie-manager/blob/master/LICENSE)
 
 Original author : [**Wilson Sumanang**](https://github.com/saruberoz)
 
@@ -20,6 +21,8 @@ Imported from [saruberoz.github.io](http://saruberoz.github.io/flask-session-coo
 ## Installation
 
 ### Package
+
+[![Packaging status](https://repology.org/badge/vertical-allrepos/python:flask-session-cookie-manager.svg)](https://repology.org/project/python:flask-session-cookie-manager/versions)
 
 #### BlackArch Linux
 
