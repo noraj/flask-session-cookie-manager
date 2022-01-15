@@ -88,7 +88,7 @@ optional arguments:
 ### Decode
 
 ```
-usage: flask_session_cookie_manager.py decode [-h] [-s <string>] -c <string>
+usage: flask_session_cookie_manager{2,3}.py decode [-h] [-s <string>] -c <string>
 
 optional arguments:
   -h, --help            show this help message and exit
