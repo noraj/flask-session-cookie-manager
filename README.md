@@ -2,7 +2,7 @@
 
 [![Build Status](https://img.shields.io/github/forks/noraj/flask-session-cookie-manager.svg?style=flat-square)](https://github.com/noraj/flask-session-cookie-manager)
 [![Build Status](https://img.shields.io/github/stars/noraj/flask-session-cookie-manager.svg?style=flat-square)](https://github.com/noraj/flask-session-cookie-manager)
-[![Rawsec's CyberSecurity Inventory](https://inventory.rawsec.ml/img/badges/Rawsec-inventoried-FF5050_flat-square.svg)](https://inventory.rawsec.ml/tools.html#Flask%20Session%20Cookie%20Decoder/Encoder)
+[![Rawsec's CyberSecurity Inventory](https://inventory.raw.pm/img/badges/Rawsec-inventoried-FF5050_flat-square.svg)](https://inventory.raw.pm/tools.html#Flask%20Session%20Cookie%20Decoder/Encoder)
 ![GitHub top language](https://img.shields.io/github/languages/top/noraj/flask-session-cookie-manager.svg?style=flat-square)
 [![GitHub license](https://img.shields.io/github/license/noraj/flask-session-cookie-manager)](https://github.com/noraj/flask-session-cookie-manager/blob/master/LICENSE)
 
