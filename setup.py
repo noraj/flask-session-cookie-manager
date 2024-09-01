@@ -44,4 +44,5 @@ setup(
     install_requires=['itsdangerous', 'Flask'],
     # https://python-packaging.readthedocs.io/en/latest/command-line-scripts.html
     scripts=['flask_session_cookie_manager2.py', 'flask_session_cookie_manager3.py'],
+    py_modules=[]
 )

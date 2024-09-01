@@ -34,7 +34,7 @@ Imported from [saruberoz.github.io](http://saruberoz.github.io/flask-session-coo
 
 #### ArchLinux
 
-Both python3 etn python2:
+Both python3 and python2:
 
 ```
 $ git clone https://github.com/noraj/flask-session-cookie-manager.git && cd flask-session-cookie-manager
@@ -51,7 +51,8 @@ Eg.
 $ git clone https://github.com/noraj/flask-session-cookie-manager.git && cd flask-session-cookie-manager
 $ python -m venv venv
 $ source venv/bin/activate
-$ python setup.py install
+$ pip install setuptools
+$ python -m pip install .
 ```
 
 ## Usage
