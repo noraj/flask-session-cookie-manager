@@ -26,6 +26,7 @@ class MockApp(object):
 
     def __init__(self, secret_key):
         self.secret_key = secret_key
+        self.config = {"SECRET_KEY_FALLBACKS" : None}
 
 
 if sys.version_info[0] == 3 and sys.version_info[1] < 4: # >= 3.0 && < 3.4

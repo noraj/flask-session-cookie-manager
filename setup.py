@@ -20,7 +20,7 @@ if 'package' in sys.argv:
 
 setup(
     name='flask-session-cookie-manager',
-    version='1.2.1.1',
+    version='1.2.2',
     description="simple Python script to deal with Flask session cookie",
     long_description=read(join(dirname(__file__), 'README.md')),
     long_description_content_type='text/markdown',

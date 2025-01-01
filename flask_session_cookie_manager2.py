@@ -26,7 +26,7 @@ class MockApp(object):
 
     def __init__(self, secret_key):
         self.secret_key = secret_key
-
+        self.config = {"SECRET_KEY_FALLBACKS" : None}
 
 class FSCM:
     __metaclass__ = ABCMeta
