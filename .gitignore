@@ -109,3 +109,9 @@ venv.bak/
 
 # pip works
 flask-session-cookie-manager.zip
+
+# PKGBUILD
+*.tar.zst
+src/
+pkg/
+flask-session-cookie-manager/

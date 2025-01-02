@@ -34,12 +34,15 @@ Issues = 'https://github.com/noraj/flask-session-cookie-manager/issues'
 Repository = 'https://github.com/noraj/flask-session-cookie-manager'
 
 [project.scripts]
-flask-session-cookie-manager2 = "flask_session_cookie_manager2:main"
-flask-session-cookie-manager3 = "flask_session_cookie_manager3:main"
+flask-session-cookie-manager2 = 'flask_session_cookie_manager2:main'
+flask-session-cookie-manager3 = 'flask_session_cookie_manager3:main'
 
 [build-system]
 requires = ['hatchling']
 build-backend = 'hatchling.build'
 
+#[tool.hatch.build.targets.sdist]
+#only-include = ['flask_session_cookie_manager*.py']
+
 [tool.hatch.build.targets.wheel]
-packages = ["*.py"]
+packages = ['flask_session_cookie_manager*.py']
