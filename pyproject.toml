@@ -1,0 +1,45 @@
+[project]
+name = 'flask-session-cookie-manager'
+version = '1.2.2'
+authors = [
+  { name='Wilson Sumanang' },
+  { name='Alexandre ZANNI', email='alexandre.zanni@europe.com' },
+]
+maintainers= [
+  { name='Alexandre ZANNI', email='alexandre.zanni@europe.com' },
+]
+description = 'Flask Session Cookie Decoder/Encoder'
+readme = 'README.md'
+license = {file = 'LICENSE'}
+classifiers = [
+  'Operating System :: OS Independent',
+  'Programming Language :: Python',
+  'Programming Language :: Python :: 2',
+  'Programming Language :: Python :: 3',
+  'License :: OSI Approved :: MIT License',
+  'Topic :: Security',
+  'Topic :: Utilities',
+  'Environment :: Console',
+  'Intended Audience :: Other Audience',
+]
+keywords = ['Flask', 'session', 'cookie', 'decoder', 'encoder']
+dependencies = [
+  'itsdangerous',
+  'Flask'
+]
+
+[project.urls]
+Homepage = 'https://noraj.github.io/flask-session-cookie-manager/'
+Issues = 'https://github.com/noraj/flask-session-cookie-manager/issues'
+Repository = 'https://github.com/noraj/flask-session-cookie-manager'
+
+[project.scripts]
+flask-session-cookie-manager2 = "flask_session_cookie_manager2:main"
+flask-session-cookie-manager3 = "flask_session_cookie_manager3:main"
+
+[build-system]
+requires = ['hatchling']
+build-backend = 'hatchling.build'
+
+[tool.hatch.build.targets.wheel]
+packages = ["*.py"]
