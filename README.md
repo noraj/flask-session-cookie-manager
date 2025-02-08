@@ -26,8 +26,8 @@ Imported from [saruberoz.github.io](http://saruberoz.github.io/flask-session-coo
 
 #### BlackArch Linux
 
-```
-# pacman -S flask-session-cookie-manager{3,2}
+```bash
+pacman -S flask-session-cookie-manager{3,2}
 ```
 
 ### Git
@@ -36,9 +36,9 @@ Imported from [saruberoz.github.io](http://saruberoz.github.io/flask-session-coo
 
 Both python3 and python2:
 
-```
-$ git clone https://github.com/noraj/flask-session-cookie-manager.git && cd flask-session-cookie-manager
-# makepkg -sic
+```bash
+git clone https://github.com/noraj/flask-session-cookie-manager.git && cd flask-session-cookie-manager
+makepkg -sic
 ```
 
 #### Other distros
@@ -47,12 +47,11 @@ Find your way with your package manager, use pip in a virtual environment or use
 
 Eg.
 
-```
-$ git clone https://github.com/noraj/flask-session-cookie-manager.git && cd flask-session-cookie-manager
-$ python -m venv venv
-$ source venv/bin/activate
-$ pip install setuptools
-$ python -m pip install .
+```bash
+git clone https://github.com/noraj/flask-session-cookie-manager.git && cd flask-session-cookie-manager
+python -m venv venv
+source venv/bin/activate
+python -m pip install .
 ```
 
 ## Usage
